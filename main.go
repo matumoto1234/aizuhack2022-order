@@ -22,22 +22,22 @@ func NewTeam(name string, order int, hash [sha256.Size]byte) Team {
 
 func main() {
 	teamNames := [16]string{
-		"team01",
-		"team02",
-		"team03",
+		"edamame",
+		"L&P",
+		"一夜城",
 		"team04",
-		"team05",
-		"team06",
-		"team07",
-		"team08",
+		"LIoT",
+		"ティラノがやってきたぞ！",
+		"スーパーマイマイ",
+		"チーズケーキ",
 		"team09",
-		"team10",
-		"team11",
-		"team12",
-		"team13",
-		"team14",
-		"team15",
-		"team16",
+		"🍆 or 🐊",
+		"ぼっこりカマンベール",
+		"コロンブス",
+		"musicA",
+		"分速3分メートル",
+		"チームこねこね",
+		"酪王",
 	}
 
 	hashs := make([][sha256.Size]byte, 16)
@@ -59,6 +59,6 @@ func main() {
 	})
 
 	for i, t := range teams {
-		fmt.Printf("%02d番目の発表チームは %v (チーム%02d)\n", i+1, t.name, t.order)
+		fmt.Printf("%02d番目の発表チームは チーム%02d: %s \n", i+1, t.order, t.name)
 	}
 }

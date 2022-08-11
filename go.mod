@@ -1,3 +1,3 @@
-module github.com/matumoto1234/aizuhack2022-order
+module github.com/matumoto1234/aizuhack-order
 
-go 1.18
+go 1.19
